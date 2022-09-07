@@ -1,0 +1,81 @@
+char Incoming_value = 0;
+
+void setup() 
+{
+  Serial.begin(9600);
+  pinMode(1, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);       
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT); 
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT); 
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);       
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT); 
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);      
+}
+
+void loop()
+{
+  if(Serial.available() > 0)  
+  {
+    Incoming_value = Serial.read();      
+    Serial.print(Incoming_value);        
+    Serial.print("\n");
+    if(Incoming_value == 'A')             
+      digitalWrite(1, HIGH);  
+    else if(Incoming_value == 'a')       
+      digitalWrite(1, LOW); 
+    if(Incoming_value == 'B')             
+      digitalWrite(2, HIGH);  
+    else if(Incoming_value == 'b')       
+      digitalWrite(2, LOW); 
+    if(Incoming_value == 'C')             
+      digitalWrite(3, HIGH);  
+    else if(Incoming_value == 'c')       
+      digitalWrite(3, LOW); 
+    if(Incoming_value == 'D')             
+      digitalWrite(4, HIGH);  
+    else if(Incoming_value == 'd')       
+      digitalWrite(4, LOW); 
+    if(Incoming_value == 'E')             
+      digitalWrite(5, HIGH);  
+    else if(Incoming_value == 'e')       
+      digitalWrite(5, LOW); 
+    if(Incoming_value == 'F')             
+      digitalWrite(6, HIGH);  
+    else if(Incoming_value == 'f')       
+      digitalWrite(6, LOW); 
+    if(Incoming_value == 'G')             
+      digitalWrite(7, HIGH);  
+    else if(Incoming_value == 'g')       
+      digitalWrite(7, LOW); 
+    if(Incoming_value == 'H')             
+      digitalWrite(8, HIGH);  
+    else if(Incoming_value == 'h')       
+      digitalWrite(8, LOW); 
+    if(Incoming_value == 'I')             
+      digitalWrite(9, HIGH);  
+    else if(Incoming_value == 'i')       
+      digitalWrite(9, LOW); 
+    if(Incoming_value == 'J')             
+      digitalWrite(10, HIGH);  
+    else if(Incoming_value == 'j')       
+      digitalWrite(10, LOW); 
+    if(Incoming_value == 'K')             
+      digitalWrite(11, HIGH);  
+    else if(Incoming_value == 'k')       
+      digitalWrite(11, LOW);        
+    if(Incoming_value == 'L')             
+      digitalWrite(12, HIGH);  
+    else if(Incoming_value == 'l')       
+      digitalWrite(12, LOW); 
+    if(Incoming_value == 'M')             
+      digitalWrite(13, HIGH);  
+    else if(Incoming_value == 'm')       
+      digitalWrite(13, LOW);  
+  }                            
+} 
