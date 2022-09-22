@@ -14,9 +14,12 @@ Arduino also makes simpler the working process of microcontroller, but it gives 
 <h1> Features of Home-Automation </h1>
 <br> • Inexpensive</br>
 <br> • The simple, clear programming environment </br>
-<br> • Open source and extensible software </br>
-<br> • Open source and extensible software </br>
-<br> • Open source and extensible hardware </br>
+<br> • Flexibility for new devices and appliances </br>
+<br> • Remote control of home functions </br>
+<br> • Increased energy efficiency </br>
+<br> • mproved appliance functionality </br>
+
+
 
 
 
